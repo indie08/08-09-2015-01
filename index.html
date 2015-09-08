@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/page.css" />
+<link rel="stylesheet" type="text/css" href="css/slide-c.css" />
+<link rel="stylesheet" type="text/css" href="css/iscroll.css"/>
+<script type="text/javascript" src="js/iscroll.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/ajax.js"></script>
+<script type="text/javascript" src="js/fastclick.js"></script>
+<script type="text/javascript">
+
+var myScroll;
+
+function loaded () {
+	myScroll = new IScroll('#wrapper', {
+		scrollX: true,
+		scrollY: true,
+		momentum: false,
+		snap: true
+	});
+}
+
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+</script>
+
+<!---<script type="text/javascript" charset="utf-8" src="cordova.js"></script>-->
+    <script type="text/javascript" charset="utf-8">
+    // Wait for device API libraries to load//
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, true);
+    }
+    // device APIs are available //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("backbutton", onBackKeyDown, true);
+    }
+    // Handle the back button //
+    function onBackKeyDown() {
+    }
+
+    </script>
+
+<title>llamadas ajax y transiciones fluidas</title>
+<body onload="loaded()", onload="onLoad()">
+</head>
+<div class="page">
+    <div class="center">
+        <div class="header"><div id="back-btn"><a id="return" href="#"><img src="img/mus.png"/></a>
+        </div><div id="title"><img id="image" src="img/prueba.png"/>
+          <div id="title0"></div>
+</div>
+
+   
+    </div>
+    <div class="X"></div><!--solo es la parte trasera del header NO QUITAR-->
+<!--
+<section>
+<input type="radio" name="slider-select-element" id="element1" checked="checked" />
+                <input type="radio" name="slider-select-element" id="element2" />
+                <input type="radio" name="slider-select-element" id="element3" />
+                <input type="radio" name="slider-select-element" id="element4" />
+                <input type="radio" name="slider-select-element" id="element5" />
+                <input type="radio" name="slider-select-element" id="element6" />
+                <input type="radio" name="slider-select-element" id="element7" />
+                <input type="radio" name="slider-select-element" id="element8" />
+                
+                <div id="slider-container">
+                    <div id="slider-box">
+                        <div class="slider-element">
+                            <div class="element-1">
+                            <a id="miboton"  href="#"><img  src="img/especiales-01.jpg" /></a>
+                            </div>
+                        </div>
+                        <div class="slider-element">
+                            <div class="element-2">
+                              <a href="#"><img src="img/galeria-01.jpg"/></a>
+
+                            </div>
+                        </div>
+                        <div class="slider-element">
+                            <div class="element-3">
+                             <a href="#"><img src="img/escenicas-01.jpg"/></a>
+
+                            </div>                            
+                        </div>
+                        <div class="slider-element">
+                            <div class="element-4">
+                             <a id="boton" href="#"><img src="img/cineclub-01.jpg"/></a>
+
+                            </div>                            
+                        </div>
+                        <div class="slider-element">
+                            <div class="element-5">
+                             <a href="#"><img src="img/clubhouse-01.jpg"/></a>
+
+                            </div>                            
+                        </div>
+                        <div class="slider-element">
+                            <div class="element-6">
+                             <a href="#"><img src="img/infantil-01.jpg"/></a>
+
+                            </div>                            
+                        </div>
+                        <div class="slider-element">
+                            <div class="element-7">
+                             <a href="#"><img src="img/literatura-01.jpg"/></a>
+
+                            </div>                            
+                        </div>
+                        <div class="slider-element">
+                            <div class="element-8">
+                             <a href="#"><img src="img/musica-01.jpg"/></a>
+
+                            </div>                            
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="slider-arrows">
+                    <label for="element1"></label>
+                    <label for="element2"></label>
+                    <label for="element3"></label>
+                    <label for="element4"></label>
+                    <label for="element5"></label>
+                    <label for="element6"></label>
+                    <label for="element7"></label>
+                    <label for="element8"></label>
+                </div>
+            </section> -->
+            <div class="cartelera"><img src="img/sep.jpg"/></div>
+            <div class="header-1"><div id="header-2"><p>cartelera</p></div></div>
+<div id="wrapper">
+	<div id="scroller">
+		<ul>
+			<li ><a href="#"><img src="img/farito.png"/><p>Especiales</p></a></li>
+			<li ><a id="miboton"  href="" ><img src="img/sirena.png"/><p>Musíca</p></a></li>
+			<li ><a href="#"><img src="img/balon.png"/><p>faro infantil</p></a></li>
+			<li><a id="boton" href="#"><img src="img/ancla.png"/><p>cineclub</p></a></li>
+			<li><a href="#"><img src="img/sirena.png" /><p>Literatura</p></a></li>
+			<li><a href="#"><img src="img/fish.png"/><p>Galería</p></a></li>
+            
+			<li><a href="#"><img  src="img/sirena.png"/><p>Musíca</p></a></li>
+			<li><a href="#"><img src="img/balon.png"/><p>Clubhouse</p></a></li>
+		</ul>
+
+	</div>
+</div>
+
+  <div class="footer"></div>
+    </div>
+      
+      <div class="rightTotal" id="rightTotal">
+      <div id="load-async"></div>
+      </div>
+</div>
+
+</body>
+</html>
